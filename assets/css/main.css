@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .content p {
+    @apply mt-5 text-zinc-700;
+  }
+
+  .content ul {
+    @apply mt-5 list-outside list-disc text-zinc-700;
+  }
+  .content ol {
+    @apply mt-5 list-outside list-decimal text-zinc-700;
+  }
+
+  .content a {
+    @apply text-blue-500 underline;
+  }
+  .content img {
+    @apply rounded-lg rounded-xl;
+  }
+
+  .content pre {
+    @apply mt-4 mb-4 overflow-scroll text-sm rounded-2xl bg-zinc-800 p-5 text-slate-50 font-light;
+  }
+
+  /* .content code:not('.content') {
+    @apply inline-block  rounded-md bg-zinc-100 px-2 py-1;
+  } */
+
+  .content hr {
+    @apply my-5;
+  }
+}
+
+/* @layer components {
+  .router-link-active,
+  .router-link-exact-active {
+    @apply text-blue-500;
+  }
+} */
